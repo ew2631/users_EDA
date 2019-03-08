@@ -1,6 +1,6 @@
 # users_EDA
 
-Analysis 
+Analysis: 
 
 Adoption user identification: To identify which users were adopted, I determined the earliest and latest login dates, then created all possible 7-day windows between those two dates. I grouped the login sessions by user_id and ran all login dates for a user through the list of 7-day windows. I created a new column “Adopted”, so if a user logged in more than 3 times in any 7-day window, they were tagged with “1” for adopted and “0” for non-adopted. 
 
@@ -21,5 +21,6 @@ Mosaics plots: I created mosaic plots for the two binary variables: enabled_for_
 
 
 Conclusion: 
+
 Based on the results of the OLS regression and data visualizations, we find that guest_invite from the creation_source variable is the best indicator for adoption. Given these results, the future recommendation is to focus more efforts on creating and marketing incentives to current users to invite their friends to use Asana platform. 
 
